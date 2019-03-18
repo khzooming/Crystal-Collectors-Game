@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Unit 4 Crystal Collector Game</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4" id="name">Crystals Collector!</h1>
+
+        <h2>The objective of Crystal Collector is to match the target random number by clicking on the crystals to
+            increase your score.</h2>
+
+        <a class="btn btn-primary btn-lg" href="#" role="button">Start a New Game!</a>
+    </div>
+
+    <div class='container'>
+        <ul></ul>
+        <li>You will be given a random target number at the start of the game.</li>
+    
+        <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</li>
+    
+        <li>You win the game by matching your total score to the target number. You lose the game if your total score
+            goes above the target number.</li>
+
+        <li>The value of each crystal is hidden from you until you click on it. Each time the game starts, the game will
+            randomly change the value of each crystal.</li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+          
+        <div class="col-md-3" id="targetBox">
+                <div id="targetN"><span>test #</span></div>
+            </div>
+        <div class="col-md-3" id="scoreBox">
+            <div id="scoreN"><span>test score</span></div>
+        </div>
+
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img src="./assets/images/Amazonite_Blue_Crystal.jpg" class="imageBox" alt="Crystal Pic">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/Celestite_gray_crystal.jpg" class="imageBox" alt="Crystal Pic">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/Tourmaline_Crstal.jpg" class="imageBox" alt="Crystal Pic">
+        </div>
+        <div class="col-md-2">
+            <img src="./assets/images/Chrysoprase_green_crystal.jpg" class="imageBox" alt="Crystal Pic">
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">Your total score is:</p>
+ 
+        <div class="col-md-5"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"><span>test score</span></div>
+ 
+        <div class="col-md-4"></div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>

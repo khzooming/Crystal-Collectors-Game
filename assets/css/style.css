@@ -1,0 +1,33 @@
+
+#scoreBox {
+    display: block;
+    height: 100px;
+    background-color: aqua;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    size: 20px;
+}
+
+#targetBox {
+    display: block;
+    height: 100px;
+    margin-left: 10px;
+    background-color: blue;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    size: 20px;
+}
+
+.imageBox {
+    width: 100%;
+    height: auto;
+}
+
+#name {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+
+}
