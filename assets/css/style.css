@@ -2,22 +2,22 @@
 #scoreBox {
     display: block;
     height: 100px;
-    background-color: aqua;
+    background-color: rgb(56, 175, 230);
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    size: 20px;
+    font-size: 25px;
 }
 
 #targetBox {
     display: block;
     height: 100px;
     margin-left: 10px;
-    background-color: blue;
+    background-color: rgb(111, 111, 241);
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    size: 20px;
+    font-size: 25px;
 }
 
 .imageBox {
@@ -29,5 +29,10 @@
     text-align: center;
     color: cornflowerblue;
     font-size: 40px;
-
+    font-weight: bolder;
 }
+
+#startB {
+    align-items: center
+}
+
