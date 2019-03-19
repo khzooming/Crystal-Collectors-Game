@@ -7,6 +7,7 @@ function targetNumber() {
     $("#targetN").text(randomTarget);
 }
 
+targetNumber ();
 
 // Function to assign random values to crystals
 function crystalValues() {
@@ -31,22 +32,23 @@ function crystalValues() {
         var random4 = Math.floor(Math.random() * 12) + 1;
         console.log("Crystal 4 value = " + random4);
     })
-
+    
     console.log(random1 + random2 + random3 + random4);
     return random1, random2, random3, random4
-
+    
 }
 
+crystalValues();
 
 // Function to add crystal click points and display the ongoing total
-// function addition() {
-//     var add = "";
-//     add += 
+function addition() {
+    var add = "";
+    add += 
     
-//    $("#crystal1").on("click", function () {
-//     add += random1;
-//    })
-// }
+   $("#crystal1").on("click", function (e) {
+    add += random1;
+   })
+}
 
 
 
@@ -67,7 +69,4 @@ function crystalValues() {
         console.log("yo I'm after the crystal math part");
     
 
-
-targetNumber();
-crystalValues();
 
