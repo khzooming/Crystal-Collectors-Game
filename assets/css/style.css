@@ -36,3 +36,44 @@
     align-items: center
 }
 
+#winTitle {
+    background-color: purple;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    height: 70px;
+    display: block;
+}
+
+#lossTitle {
+    background-color: pink;
+    color: black;
+    margin-left: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    height: 70px;
+    display: block;
+}
+
+#winBlock {
+    display: block;
+    height: 100px;
+    background-color: purple;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+#lossesBlock {
+    display: block;
+    height: 100px;
+    background-color: pink;
+    color: black;
+    margin-left: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}

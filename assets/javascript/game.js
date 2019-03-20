@@ -5,68 +5,81 @@ function targetNumber() {
     var randomTarget = Math.floor(Math.random() * 101) + 19;
     console.log(randomTarget);
     $("#targetN").text(randomTarget);
+    return randomTarget;
+}
+var values = [];
+var playerTotal = 0;
+
+targetNumber();
+var randomTarget= targetNumber();
+
+function createCrystalValues() {
+    for (i = 0; i < 4; i++) {
+        values.push(Math.floor(Math.random() * 12) + 1);
+    }
 }
 
-targetNumber ();
+createCrystalValues();
 
-// Function to assign random values to crystals
-function crystalValues() {
+function crystalAddition() {
+
     var $crysNum1 = $("#crystal1");
     var $crysNum2 = $("#crystal2");
     var $crysNum3 = $("#crystal3");
     var $crysNum4 = $("#crystal4")
 
     $crysNum1.click(function () {
-        var random1 = Math.floor(Math.random() * 12) + 1;
-        console.log("Crystal 1 value = " + random1);
+        playerTotal += values[0];
+        console.log("Crystal 1 value = " + values[0]);
+        $("#scoreN").text(playerTotal);
     })
     $crysNum2.click(function () {
-        var random2 = Math.floor(Math.random() * 12) + 1;
-        console.log("Crystal 2 value = " + random2);
+        playerTotal += values[1];
+        console.log("Crystal 2 value = " + values[1]);
+        $("#scoreN").text(playerTotal);
     })
     $crysNum3.click(function () {
-        var random3 = Math.floor(Math.random() * 12) + 1;
-        console.log("Crystal 3 value = " + random3);
+        playerTotal += values[2]
+        console.log("Crystal 3 value = " + values[2]);
+        $("#scoreN").text(playerTotal);
     })
     $crysNum4.click(function () {
-        var random4 = Math.floor(Math.random() * 12) + 1;
-        console.log("Crystal 4 value = " + random4);
+        playerTotal += values[3]
+        console.log("Crystal 4 value = " + values[3]);
+
+        $("#scoreN").text(playerTotal);
+        return playerTotal;
     })
-    
-    console.log(random1 + random2 + random3 + random4);
-    return random1, random2, random3, random4
-    
-}
 
-crystalValues();
-
-// Function to add crystal click points and display the ongoing total
-function addition() {
-    var add = "";
-    add += 
-    
-   $("#crystal1").on("click", function (e) {
-    add += random1;
-   })
 }
 
 
+function winsLosses() {
+    var $wins = $("#winBlock");
+    var $losses = $("#lossesBlock");
+    if (playerTotal > randomTarget) {
+        wins++;
+        $("#winBlock").text(wins);
+        console.log(wins)
+    }
+    else if (playerTotal === randomTarget) {
+        losses++;
+        $("#lossesBlock").text(losses);
+    }
+}
 
 
-    // $("#tails").on("click", function() {
+crystalAddition();
+winsLosses();
 
-    // if () {
-    //     add += random1;
-    // } else if () {
-    //     add += random2;
-    // } else if () {
-    //     add += random3;
-    // } else if ($crysNum4) {
-    //     add += random4;
-    // }
-    //     console.log("score is " + score);
-        console.log("add is " + add);
-        console.log("yo I'm after the crystal math part");
-    
+// reset function
+// var wins = 0
+// var losses = 0
+// start new game button would be tied to reset function
+
+
+
+
+
 
 
