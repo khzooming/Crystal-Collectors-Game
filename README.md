@@ -1,2 +1,3 @@
-# unit-4-game
-HW #4
+# Crystal Collectors Game
+
+Site link - https://khzooming.github.io/Crystal-Collectors-Game/
